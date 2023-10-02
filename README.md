@@ -15,7 +15,7 @@ Before you can run this application, you'll need the following:
 
 1. Clone this repository to your local machine:
 
-`git clone https://github.com/Yuanjie58/Ai-essay-generator.git`
+`git clone https://github.com/Yuanjie58/essay-generator.git`
 
 2.Navigate to the project directory:
 
