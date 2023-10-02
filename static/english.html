@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="A website that generate essay in one click by yuan jie" />
+  <title>AI Essay Generator</title>
+  <h3 id ="subtitle">Yuan Jie</h3>
+  <link rel="icon" type="image/x-icon" href="Yuan_Jie.png">
+</head>
+<body>
+
+  <h1>AI Essay Generator</h1>
+  
+  <h2>Essay Writing</h2>
+  
+  <form id="essay1">
+    <label for="topic">Enter your essay topic:</label><br> 
+    <input type="text" id="topic" name="topic"><br>
+    
+    <label for="length">Choose your essay length:</label><br>
+    <select id="length" name="length">
+      <option value="short">Short (80 words)</option>
+      <option value="long">Long (120 words)</option>
+    </select><br>
+    
+    <input type="submit" value="Generate Essay">
+    </form>
+<div id="essay">
+   <p id="essay-text">The generated essay</p>
+  <!-- Loading Screen inside the "essay" div -->
+  <div id="loading-screen" style="display: none;">
+    <p>Loading...</p>
+  </div>
+
+  <div id="essay-count"></div>
+ 
+  <button id="fullscreen">Toggle Fullscreen Essay</button>
+  <p>**is spacing for each paragraph</p>
+</div>
+  <button onclick="location.href='english.html'">Back</button>
+    <button onclick="window.location.href = 'chinese.html';">中文版</button>
+
+  <script src="/english.js" type="module"></script>
+<link rel="stylesheet" href="/english.css">
+  
+</body>
+</html>

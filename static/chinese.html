@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="A website that generate essay in one click by yuan jie" />
+  <title>人工智能作文生成器</title>
+  <h3 id ="subtitle">松霖是傻逼</h3>
+  <link rel="icon" type="image/x-icon" href="Yuan_Jie.png">
+</head>
+<body>
+  <h1>人工智能作文生成器</h1>
+  <h2>作文写作</h2>
+  
+  <form id="essay1">
+    <label for="topic">输入您的作文题目：</label><br> 
+    <input type="text" id="topic" name="topic"><br>
+    
+    <label for="length">字數:</label><br>
+    <select id="length" name="length">
+      <option value="short">短文 (100 字)</option>
+      <option value="long">长篇作文 (350 字)</option>
+    </select><br>
+
+    <label for="type">作文类型:</label><br>
+    <select id="type" name="type">
+      <option value="记叙文">记叙文</option>
+      <option value="说明文">说明文</option>
+      <option value="议论文">议论文</option>
+      <option value="应用文">应用文</option>
+    </select><br>
+    
+    <input type="submit" value="生成作文">
+  </form>
+  
+  <div id="essay">
+     <p id="essay-text">生成好的作文</p>
+  <div id="loading-screen" style="display: none;">
+    <p>正在生成中...</p>
+  </div>
+  
+  <div id="essay-count"></div>
+ 
+  <button id="fullscreen">切换全屏显示作文</button>
+  <p>**是分段</p>
+</div>
+  
+  <button onclick="location.href='chinese.html">返回</button>
+  <button onclick="window.location.href = 'english.html';">英文版</button>
+  
+  <script src="chinese.js"></script> 
+  <link rel="stylesheet" href="chinese.css">
+</body>
+</html>
