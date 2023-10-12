@@ -8,6 +8,7 @@ async function generateEssay(e) {
   const fullscreenButton = document.getElementById('fullscreen');
   const topic = document.querySelector('#topic').value;
   const length = document.querySelector('#length').value;
+  const note = document.querySelector('#note').value;
 
   // 显示加载屏幕
   const loadingScreen = document.getElementById('loading-screen');
@@ -28,7 +29,7 @@ async function generateEssay(e) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        prompt: `write a whole complete essay in about 80 words about ${topic}`,
+        prompt: `write a whole complete essay in about 80 words about ${topic} with the note provided ${note},if no note provided just generate without the note`,
         max_tokens: 2000
       })
     });
@@ -40,11 +41,11 @@ async function generateEssay(e) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        prompt: `Write a complete essay at least 120 words about ${topic}, with each paragraph marked **, don't make over 5 paragraphs and less than 3 paragraphs.`,
+        prompt: `Write a complete essay at least 120 words about ${topic}with the note provided ${note}, with each paragraph marked **, don't make over 5 paragraphs and less than 3 paragraphs.`,
         max_tokens: 2000
       })
     });
-  } // <-- This closing brace was missing
+  } 
     
    return response.json();
   }
