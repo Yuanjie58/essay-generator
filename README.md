@@ -1,5 +1,3 @@
-# essay-generator
-a essay generator using openai text davinci 003 model
 
 # Essay Generator
 
